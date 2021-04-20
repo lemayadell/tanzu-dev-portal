@@ -39,7 +39,7 @@ interface](https://github.com/container-storage-interface/spec) (CSI) to provide
 storage functionality to containers. Storage is implemented in CSI plugins. This
 interface / plugin model enables Kubernetes to support many storage options
 implemented via plugins (or drivers) such as
-[vSphere](https://github.com/kubernetes-sigs/vsphere-csi-driver),
+[vSphere](https://github.com/kubernetes-sigs/vsphere-csi-driver), [DellEMC](https://tanzu.vmware.com/developer/guides/kubernetes/storage-integration/),
 [portworx](https://github.com/libopenstorage/openstorage/tree/master/csi), [AWS
 EFS](https://github.com/kubernetes-sigs/aws-ebs-csi-driver), and
 [NetApp](https://github.com/NetApp/trident).
@@ -105,7 +105,7 @@ Running trident in a cluster will provision volumes against its supported
 providers, such as NetApp's SolidFire. It also handles concerns around backup
 and recovery. Another common project that follows this model is
 [rook](https://rook.io), which provides integration with providers like Ceph and
-NFS.
+NFS. DellEMC also has a great blog portal dedicated to storage integration [DellEMC CSI Blog](https://volumes.blog/2021/02/11/installing-working-with-the-dell-emc-powermax-csi-driver-for-kubernetes-and-redhat-openshift/>
 
 ### Option Considerations
 
